@@ -13,9 +13,15 @@ export default async function Home() {
       <main className="container mx-auto px-4">
         {/* Jumbotron */}
         <section className="mb-10 mt-10 space-y-2 text-center">
-          <h1 className="text-5xl font-bold">The NewsHub Blogs</h1>
+          <h1 className="text-5xl font-bold">
+            <span className="text-base-content">The</span>{" "}
+            <span className="text-cyan-500">
+              News<span className="text-indigo-600">Hub</span>{" "}
+              <span className="text-base-content">Blogs</span>
+            </span>
+          </h1>
           <p className="text-xl">
-            A blog that provides the latest strange news
+            A blog that provides the latest random news and tips
           </p>
         </section>
 

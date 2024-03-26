@@ -32,14 +32,18 @@ const BlogDetail: React.FC<BlogDetailProps> = async ({ params }) => {
     renderNode: {
       [BLOCKS.HEADING_2]: (node, children) => {
         return (
-          <h2 className="my-2 text-lg font-semibold md:text-xl ">
+          <h2 className="my-2 text-lg font-semibold text-white md:text-xl ">
             {" "}
             {children}
           </h2>
         );
       },
       [BLOCKS.PARAGRAPH]: (node, Children) => {
-        return <p className="text-lg font-light">{Children}</p>;
+        return (
+          <>
+            <p className="text-lg font-light">{Children}</p>
+          </>
+        );
       },
     },
   };

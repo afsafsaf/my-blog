@@ -34,7 +34,7 @@ const CardBlog: React.FC<CardBlogProps> = ({
   return (
     <>
       <Link href={`/${slug}`}>
-        <Card className="h-96">
+        <Card className="h-96 bg-slate-600">
           <CardHeader>
             <div className="relative h-[220px] w-full rounded-md">
               <Image
@@ -46,11 +46,15 @@ const CardBlog: React.FC<CardBlogProps> = ({
             </div>
           </CardHeader>
           <CardContent>
-            <Badge variant="outline" className="rounded-sm bg-green-100">
+            <Badge variant="outline" className="rounded-sm bg-sky-300">
               {category}
             </Badge>
-            <h2 className="line-clamp-2 text-lg font-semibold">{title}</h2>
-            <p className="text-sm font-light italic">2024-03-17 - {author}</p>
+            <h2 className="line-clamp-2 text-lg font-semibold text-slate-950">
+              {title}
+            </h2>
+            <p className="text-sm font-light italic text-white">
+              2024-03-17 - {author}
+            </p>
             <p className="line-clamp-3">{description}</p>
           </CardContent>
         </Card>
